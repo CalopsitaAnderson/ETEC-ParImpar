@@ -13,7 +13,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="108dp"
-        android:background="@color/colorAccent"
+        android:background="#FCFCFC"
         android:text="@string/numero"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -42,9 +42,10 @@
         android:layout_marginTop="84dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@color/colorAccent"
+        android:background="#03A9F4"
+        android:onClick="onProcessar"
         android:text="@string/processar"
-        android:textColor="#2196F3"
+        android:textColor="#FFFFFF"
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -55,10 +56,10 @@
         android:id="@+id/lblResultado1"
         android:layout_width="67dp"
         android:layout_height="22dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="72dp"
         android:text="@string/resultado"
-        app:layout_constraintTop_toBottomOf="@+id/btnProcessar"
-        tools:layout_editor_absoluteX="60dp" />
+        app:layout_constraintStart_toStartOf="@+id/lblNumero"
+        app:layout_constraintTop_toBottomOf="@+id/btnProcessar" />
 
     <TextView
         android:id="@+id/lblResultado2"
